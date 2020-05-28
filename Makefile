@@ -5,8 +5,10 @@ README.md: guessinggame.sh
 	echo "# The Unix course assignment :guessinggame" > README.md
         echo "# guessinggame.sh" >> README.md
         echo "  \n" >> README.md
-	echo $$(date) >> README.md
-        echo "  \n" >> README.me
+	echo -n "Date:" >> README.md
+	Date >> README.md
+        echo "  \n" >> README.md
+	echo -n "number of lines:" >> README.md
 	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
 
 clean:
