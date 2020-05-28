@@ -4,6 +4,9 @@ function guessinggame {
 echo "Enter number of file from directory"
 read num
 fnumber=$(ls -1 | wc -l)
+}
+guessinggame
+
 while [[ $num>0 ]]
 do 
 if [[ $num -gt $fnumber ]]
@@ -15,8 +18,6 @@ echo "Too low in guessing"
 else
 echo "Congratulations !!! You have guess the correct number "
 exit 0
-if
-}
-echo "guess the file number in the current directory!"
+fi
 guessinggame
 done
