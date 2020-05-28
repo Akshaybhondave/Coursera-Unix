@@ -6,7 +6,6 @@ read num
 fnumber=$(ls -1 | wc -l)
 }
 guessinggame
-
 while [[ $num>0 ]]
 do 
 if [[ $num -gt $fnumber ]]
