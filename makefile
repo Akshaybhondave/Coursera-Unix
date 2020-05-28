@@ -3,7 +3,6 @@ all: README.md
 README.md: guessinggame.sh
         touch README.md
 	echo "# The Unix course assignment :guessinggame" > README.md
-        echo "# guessinggame.sh" >> README.md
         echo "  \n" >> README.md
 	echo -n "Date:" >> README.md
 	Date >> README.md
